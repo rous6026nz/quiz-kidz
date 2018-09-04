@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate-react-webpack",
-  "version": "0.2.1",
+  "name": "react-webpack-boilerplate",
+  "version": "0.0.1",
   "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "repository": "https://github.com/rous6026nz/react-webpack-boilerpack.git",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Zaine Kingi",
   "license": "ISC",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
+    "dev": "nodemon & webpack --watch",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -38,6 +38,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
     "knex": "^0.15.2",
+    "nodemon": "^1.18.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "sqlite3": "^4.0.2",
