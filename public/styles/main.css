@@ -1,0 +1,13 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(ellipse at top, #482e49, transparent),
+            radial-gradient(ellipse at bottom, #52af06, transparent);
+}

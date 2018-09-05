@@ -19,6 +19,6 @@ exports.seed = function(knex, Promise) {
         {id: 12, hint_text: 'Draw 1 line on paper, then 12 more and count how many lines are on the paper?', equation_id: 12},
         {id: 13, hint_text: 'Draw 1 line on paper, then 13 more and count how many lines are on the paper?', equation_id: 13},
         {id: 14, hint_text: 'Draw 1 line on paper, then 14 more and count how many lines are on the paper?', equation_id: 14}
-      ]);
-    });
-};
+      ])
+    })
+}

@@ -7,7 +7,6 @@ exports.up = (knex, Promise) => {
       table.boolean('is_completed')
       table.integer('section_score')
       table.string('section_reward')
-      table.integer('user_id').references('users.id')
   })
 }
 

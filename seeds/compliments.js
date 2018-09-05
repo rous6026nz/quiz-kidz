@@ -11,6 +11,6 @@ exports.seed = function(knex, Promise) {
         {id: 4, text: 'WOW! You are becoming a Math MASTER!', section_id: 4},
         {id: 5, text: 'Congratulations! You passed!', section_id: 5},
         {id: 6, text: 'Tu Meke!', section_id: 6}
-      ]);
-    });
-};
+      ])
+    })
+}
