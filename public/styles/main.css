@@ -1,3 +1,11 @@
+/* 
+    Import Normalize reset library.
+*/
+@import url('/node_modules/normalize.css/normalize.css')
+
+/* 
+    Basic style settings.
+*/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
