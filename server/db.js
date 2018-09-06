@@ -24,7 +24,7 @@ const getUsers = testConn => {
     const conn = testConn || connection
     // Return the users DB table.
     return conn('users')
-        // Get all records.
+        // Get all table records.
         .select()
 }
 
@@ -48,7 +48,7 @@ const getColours = testConn => {
     const conn = testConn || connection
     // Return the colours DB table.
     return conn('colours')
-        // Get all colour records.
+        // Get all table records.
         .select()
 }
 
@@ -72,7 +72,7 @@ const getAnimals = testConn => {
     const conn = testConn || connection
     // Return the animals table.
     return conn('animals')
-        // Get all animal records.
+        // Get all table records.
         .select()
 }
 
@@ -96,7 +96,7 @@ const getSections = testConn => {
     const conn = testDb || connection
     // Return the DB table.
     return conn('sections')
-        // Get all DB records.
+        // Get all table records.
         .select()
 }
 
@@ -120,7 +120,7 @@ const getEquations = testConn => {
     const conn = testDb || connection
     // Return the DB table.
     return conn('equations')
-        // Get all DB records.
+        // Get all table records.
         .select()
 }
 
@@ -149,10 +149,50 @@ const getEquationById = (id, testConn) => {
 // 
 // HINT QUERIES:
 // 
+// Get all hints.
+const getHints = testConn => {
+    // Establish the DB connection.
+    const conn = testConn || connection
+    // Return the DB table.
+    return conn('hints')
+        // Get all table records.
+        .select()
+}
+
+// Get hint by ID.
+const getHintById = (id, testConn) => {
+    // Establish the DB connection.
+    const conn = testConn || connection
+    // Return the DB table.
+    return conn('hints')
+        // Select the record where id matches the hint id.
+        .where('hints.id', id)
+        .first()
+}
 
 // 
 // COMPLIMENT QUERIES:
 // 
+// Get all compliments.
+const getCompliments = testConn => {
+    // Establish the DB connection.
+    const conn = testConn || connection
+    // Return the DB table.
+    return conn('compliments')
+        // Get all table records.
+        .select()
+}
+
+// Get compliment by ID.
+const getComplimentById = (id, testConn) => {
+    // Establish the DB connection.
+    const conn = testConn || connection
+    // Return the DB table.
+    return conn('compliments')
+        // Select the record where the id matches the compliment id.
+        .where('compliments.id', id)
+        .first()
+}
 
 
 /* 
@@ -189,10 +229,11 @@ const getUserProfile = (id, testConn) => {
             'colours.name as colName',
             'colours.hex_code as hexCode',
             'sections.name as secName',
-            'sections.difficulty_level as level',
+            'sections.difficulty_level as diffLevel',
             'sections.section_score as sectionScore',
             'sections.section_reward as sectionReward'
         )
+        .first()
 }
       
 
@@ -214,5 +255,9 @@ module.exports = {
     getEquations,
     getEquationsBySection,
     getEquationById,
-    getUserProfile
+    getUserProfile,
+    getHints,
+    getHintById,
+    getCompliments,
+    getComplimentById
 }
