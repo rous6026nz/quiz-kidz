@@ -1,5 +1,5 @@
 // 
-// User profile routes configuration file.
+// Animals routes configuration file.
 // 
 
 /* 
@@ -16,30 +16,30 @@ const router = express.Router()
     GET routes.
     ---------------------------------------------
 */
-// Get all users.
+// Get all animals.
 router.get('/', (req, res) => {
-    // Query the DB to get all users.
-    db.getUsers()
-        .then(users => {
+    // Query the DB table to get all animals.
+    db.getAnimals()
+        .then(animals => {
             // Send response.
-            res.send(users)
+            res.send(animals)
         })
         // Handle errors.
         .catch(err => {
             // Send error response.
-            res.status(500).send('Oh no! ', err.message)
+            res.status(500).send(err.message)
         })
 })
 
-// Get a user profile.
+// Get animal by ID.
 router.get('/:id', (req, res) => {
-    // Get the user id from the request.
+    // Get the animal id from the request.
     const id = Number(req.params.id)
-    // Query the DB table passing the user ID.
-    db.getUserProfile(id)
-        .then(user => {
-            // Send the respones.
-            res.send(user)
+    // Query the DB table passing the animal id.
+    db.getAnimalById(id)
+        .then(animal => {
+            // Send response.
+            res.send(animal)
         })
         // Handle errors.
         .catch(err => {

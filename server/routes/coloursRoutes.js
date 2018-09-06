@@ -1,5 +1,5 @@
 // 
-// User profile routes configuration file.
+// Colours routes configuration file.
 // 
 
 /* 
@@ -16,30 +16,30 @@ const router = express.Router()
     GET routes.
     ---------------------------------------------
 */
-// Get all users.
+// Get all colours.
 router.get('/', (req, res) => {
-    // Query the DB to get all users.
-    db.getUsers()
-        .then(users => {
+    // Query the DB to get all colours.
+    db.getColours()
+        .then(colours => {
             // Send response.
-            res.send(users)
+            res.send(colours)
         })
         // Handle errors.
         .catch(err => {
             // Send error response.
-            res.status(500).send('Oh no! ', err.message)
+            res.status(500).send(err.message)
         })
 })
 
-// Get a user profile.
+// Get colour by ID.
 router.get('/:id', (req, res) => {
-    // Get the user id from the request.
+    // Get the colour id from the request.
     const id = Number(req.params.id)
-    // Query the DB table passing the user ID.
-    db.getUserProfile(id)
-        .then(user => {
-            // Send the respones.
-            res.send(user)
+    // Query the DB table passing the colour id.
+    db.getColourById(id)
+        .then(colour => {
+            // Send response.
+            res.send(colour)
         })
         // Handle errors.
         .catch(err => {

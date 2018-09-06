@@ -14,6 +14,8 @@ const server = express()
 // Route importing.
 const homeRoutes = require('./routes/homeRoutes')
 const profileRoutes = require('./routes/profileRoutes')
+const colourRoutes = require('./routes/coloursRoutes')
+const animalRoutes = require('./routes/animalsRoutes')
 
 
 /* 
@@ -38,6 +40,8 @@ server.use(express.json())
 */
 server.use('/', homeRoutes)
 server.use('/profile', profileRoutes)
+server.use('/colours', colourRoutes)
+server.use('/animals', animalRoutes)
 
 
 /* 
