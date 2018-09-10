@@ -5,22 +5,22 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('sections').insert([
-        {id: 1, name: 'addition', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 2, name: 'addition', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 3, name: 'addition', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 4, name: 'addition', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 5, name: 'subtraction', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 6, name: 'subtraction', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 7, name: 'subtraction', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 8, name: 'subtraction', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 9, name: 'multiplication', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 10, name: 'multiplication', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 11, name: 'multiplication', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 12, name: 'multiplication', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 13, name: 'division', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 14, name: 'division', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 15, name: 'division', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
-        {id: 16, name: 'division', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'}
+        {id: 77701, name: 'addition', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77702, name: 'addition', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77703, name: 'addition', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77704, name: 'addition', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77705, name: 'subtraction', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77706, name: 'subtraction', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77707, name: 'subtraction', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77708, name: 'subtraction', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77709, name: 'multiplication', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77710, name: 'multiplication', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77711, name: 'multiplication', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77712, name: 'multiplication', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77713, name: 'division', difficulty_level: 1, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77714, name: 'division', difficulty_level: 2, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77715, name: 'division', difficulty_level: 3, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'},
+        {id: 77716, name: 'division', difficulty_level: 4, is_completed: false, section_score: 0, section_reward: 'gold-reward.png'}
       ])
     })
 }
