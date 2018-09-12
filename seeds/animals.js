@@ -16,7 +16,6 @@ exports.seed = function(knex, Promise) {
         {id: 33309, name: 'goldfish', img_filename: 'goldfish.png'},
         {id: 33310, name: 'cow', img_filename: 'cow.png'},
         {id: 33311, name: 'dog', img_filename: 'dog.png'},
-        {id: 33312, name: 'lion', img_filename: 'lion.png'},
         {id: 33313, name: 'shark', img_filename: 'shark.png'}
       ])
     })

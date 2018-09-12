@@ -238,6 +238,28 @@ const getUserProfile = (id, testConn) => {
       
 
 
+/* 
+    DATABASE POST QUERIES.
+
+*/
+// Insert new user.
+const insertNewUser = (user, testConn) => {
+    // Establish the DB connection.
+    const conn = testConn || connection
+    // Return the DB table for users.
+    return conn('users')
+        // Insert the new user data.
+        .insert({
+            'name': user.name,
+            'username': user.username,
+            'score': 0,
+            'level': 0,
+            'colour_id': user.colour_id,
+            'animal_id': user.animal_id,
+            'section_id': 77701
+        })
+}
+
 
 /* 
     Export module functions.
@@ -259,5 +281,6 @@ module.exports = {
     getHints,
     getHintById,
     getCompliments,
-    getComplimentById
+    getComplimentById,
+    insertNewUser
 }
